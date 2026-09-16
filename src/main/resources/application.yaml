@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: SpringUnitTest
+server:
+  port: 9090
