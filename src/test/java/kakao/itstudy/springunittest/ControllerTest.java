@@ -26,4 +26,12 @@ public class ControllerTest {
                 .andExpect(content().contentType("text/plain;charset=UTF-8"))
                 .andDo(print());
     }
+    @Test
+    public void testGetIndex() throws Exception{
+        mockMvc.perform(post("/")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType("text/plain;charset=UTF-8"))
+                .andDo(print());
+    }
 }
